@@ -1,0 +1,23 @@
+<!DOCTYPE html> <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8"> <title> Molly-CSS </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/css/uikit.min.css" />
+    </head>
+
+    <body class="uk-height-viewport uk-light uk-background-secondary">
+
+        <form action="/api/form" class="uk-flex uk-flex-wrap uk-text-center uk-height-viewport" method="POST" enctype="text/plain">
+            
+            <input type="text" placeholder="message" required name="m" autocomplete="off"
+                   class="uk-width-5-6 uk-padding-small uk-input uk-height-viewport">
+            
+            <input class="uk-width-1-6 uk-padding-small uk-input uk-height-viewport"
+                   type="submit" value="send">
+
+        </form>
+        
+    </body>
+
+</html>
