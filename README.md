@@ -15,6 +15,7 @@ A truly **Simple Asynchronous** web chat that sends and receives messages in the
 - The Server Knows when Client is connected.
 - The Server Knows when Client is disconnected.
 - The server suppots Poll, Epoll, WSAPoll, Kqueue.
+- It is Compatible with Windows, Linux, Mac & FreeBSD.
 
 ## Dependencies
 
@@ -178,3 +179,10 @@ Second, we have to make a simple API to handle incoming and outcoming messages:
 ## The Final Result
 
 ![image3](https://github.com/EDBCREPO/HTTPSocket/blob/main/images/image3.png?raw=true)
+
+## Build & Usage
+
+```bash
+🪟: time g++ -o main main.cpp -I ./include -lssl -lcrypto -lz -lws2_32 ; ./main
+🐧: time g++ -o main main.cpp -I ./include -lssl -lcrypto -lz ; ./main
+```
