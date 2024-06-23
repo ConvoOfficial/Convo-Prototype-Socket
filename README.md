@@ -6,8 +6,8 @@ A truly **Simple Asynchronous** web chat that sends and receives messages in the
 
 ## Preview
 
-![image1](https://raw.githubusercontent.com/EDBCREPO/HTTPSocket/images/image1.gif)
-![image2](https://raw.githubusercontent.com/EDBCREPO/HTTPSocket/images/image2.gif)
+![image1](https://github.com/EDBCREPO/HTTPSocket/blob/main/images/image1.gif?raw=true)
+![image2](https://github.com/EDBCREPO/HTTPSocket/blob/main/images/image2.gif?raw=true)
 
 ## Features
 
@@ -32,11 +32,11 @@ A truly **Simple Asynchronous** web chat that sends and receives messages in the
 
 ## How does it works
 
-It is so simple, there are two things we need the browser to do. **Send Data** and **Receive Data**. Let's start with the first.
+It is so simple, there are two things we need the browser to do. Send Data and Receive Data. Let's start with the first.
 
 #### Sending Data
 
-HTML is extrimly limited in what it can do. Hoever, we can use it to effectively send data to a server. in this case, I'm using a form with some basic inputs, that let me send messages to the server.
+HTML is extremely limited in what it can do. However, we can use it to send data to a server effectively. In this case, I'm using a form with some basic inputs, that let me send messages to the server.
 
 ```html
 <form action="/api/form" method="POST" enctype="text/plain">
@@ -45,7 +45,7 @@ HTML is extrimly limited in what it can do. Hoever, we can use it to effectively
 </form>
 ```
 
-The problem with the **Form Tag** is that it reloads the page every time a message is submitted, Worsening the user experience, to avoid this, I've decide to split the chat page in two parts using iframes, one is the message box, wich will be always loading for new messages, and other is the message form, wich is the form shown above, wich is reloaded every time a message is sent. 
+The problem with the **Form Tag** is that it reloads the page every time a message is submitted, Worsening the user experience. To avoid this, I've decided to split the chat page into two parts using iframes, one is the message box, which will always be loading for new messages, and the other is the message form, which is the form shown above, which is reloaded every time a message is sent.
 
 ```html
 <!DOCTYPE html><html lang="en">
@@ -68,9 +68,9 @@ With this improvement, the chat page will never reload on a message submit, impr
 
 #### Reading Data
 
-Now is time to explain how read data. In this case we are going to use C++ along with [NodePP](https://github.com/NodeppOficial/nodepp) and [ExpressPP](https://github.com/NodeppOficial/nodepp-express) wich are libraries for C++ to make Asynchonous Applications and Web Applications with a NodeJS like sintax.
+Now is the time to explain how to read data. In this case, we are going to use C++ along with [NodePP](https://github.com/NodeppOficial/nodepp) and [ExpressPP](https://github.com/NodeppOficial/nodepp-express) which are libraries for C++ to make Asynchronous Applications and Web Applications with a NodeJS like sintax.
 
-First, we need to create an express web server that let me server static files from **www** folder:
+First, we need to create an express web server that lets me serve static files from the **www** folder:
 
 ```cpp
 #include <nodepp/nodepp.h>
@@ -91,9 +91,9 @@ void onMain() {
 }
 ```
 
-Second, we have to make a simple api to handle incomming and outcomming messages:
+Second, we have to make a simple API to handle incoming and outcoming messages:
 
-- **Incomming Message:**
+- **Incoming Message:**
 ```cpp
     app.ALL("/msg",[]( express_http_t cli ){
         
@@ -139,7 +139,7 @@ Second, we have to make a simple api to handle incomming and outcomming messages
     });
 ```
 
-- **Outcomming Message:**
+- **Outcoming Message:**
 ```cpp
     app.ALL("/form",[]( express_http_t cli ){
 
@@ -177,4 +177,4 @@ Second, we have to make a simple api to handle incomming and outcomming messages
 
 ## The Final Result
 
-![image3](https://raw.githubusercontent.com/EDBCREPO/HTTPSocket/images/image3.png)
+![image3](https://github.com/EDBCREPO/HTTPSocket/blob/main/images/image3.png?raw=true)
