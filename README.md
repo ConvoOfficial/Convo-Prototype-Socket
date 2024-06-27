@@ -11,6 +11,7 @@ A truly **Simple Asynchronous** web chat that sends and receives messages in the
 
 ## Features
 
+- It is memory safety thanks to NodePP 
 - It is complitly Asinchronous no pthread.
 - The Server Knows when Client is connected.
 - The Server Knows when Client is disconnected.
