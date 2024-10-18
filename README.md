@@ -11,26 +11,26 @@ A truly **Simple Asynchronous** web chat that sends and receives messages in the
 
 ## Features
 
-- It is memory safety thanks to NodePP 
-- It is complitly Asinchronous no pthread.
-- The Server Knows when Client is connected.
-- The Server Knows when Client is disconnected.
-- The server suppots Poll, Epoll, WSAPoll, Kqueue.
-- It is Compatible with Windows, Linux, Mac & FreeBSD.
+- 📌: It is memory safety thanks to NodePP 
+- 📌: It is complitly Asinchronous no pthread.
+- 📌: The Server Knows when Client is connected.
+- 📌: The Server Knows when Client is disconnected.
+- 📌: The server suppots Poll, Epoll, WSAPoll, Kqueue.
+- 📌: It is Compatible with Windows, Linux, Mac & FreeBSD.
 
 ## Dependencies
-
-- **Openssl**
-    - 🪟: `pacman -S mingw-w64-ucrt-x86_64-openssl`
-    - 🐧: `sudo apt install libssl-dev`
-
-- **Zlib**  
-    - 🪟: `pacman -S mingw-w64-ucrt-x86_64-zlib`
-    - 🐧: `sudo apt install zlib1g-dev`
-
-- **Express:** [NodeppOficial/nodepp-express](https://github.com/NodeppOficial/nodepp-express)
-
-- **Nodepp:** [NodeppOficial/nodepp](https://github.com/NodeppOficial/nodepp)
+```bash
+#Openssl
+    🪟: pacman -S mingw-w64-ucrt-x86_64-openssl
+    🐧: sudo apt install libssl-dev
+#Zlib
+    🪟: pacman -S mingw-w64-ucrt-x86_64-zlib
+    🐧: sudo apt install zlib1g-dev
+#Express:
+    🔗: https://github.com/NodeppOficial/nodepp-express
+#Nodepp:
+    🔗https://github.com/NodeppOficial/nodepp
+```
 
 ## How does it works
 
