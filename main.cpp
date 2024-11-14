@@ -41,12 +41,10 @@ express_tcp_t apiRestFull_Handler() {
         console::log( "client connected" );
 
         string_t message = R"(<!DOCTYPE html>
-            <html lang="en">
-            <head>
+            <html lang="en"> <head>
                 <meta charset="UTF-8"> <title>basepage</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            </head> <body>
-            <div style="display:flex; flex-direction:column-reverse; gap:20px;">
+            </head> <body> <div style="display:flex; flex-direction:column-reverse; gap:20px;">
         )"; auto id = clients.last(); 
 
         cli.write( encoder::hex::get(message.size()) + "\r\n" + message + "\r\n" );
@@ -73,7 +71,7 @@ void onMain() {
     app.USE( express::http::file("www") );
 
     app.listen( "0.0.0.0", 8000, []( ... ){
-        console::log( "http://localhost:8000" );
+        console::log( "-> http://localhost:8000" );
     });
 
 }
