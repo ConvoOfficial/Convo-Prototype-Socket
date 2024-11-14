@@ -5,9 +5,7 @@
 A truly **Simple Asynchronous** web chat that sends and receives messages in the browser with no reloads and no javascript, just pure **HTML** and **HTTP chunked encoding**. This project was inspired by [kkuchta css-only-chat project](https://github.com/kkuchta/css-only-chat).
 
 ## Preview
-
-![image1](https://github.com/EDBCREPO/HTTPSocket/blob/main/images/image1.gif?raw=true)
-![image2](https://github.com/EDBCREPO/HTTPSocket/blob/main/images/image2.gif?raw=true)
+[Preview](https://github.com/user-attachments/assets/cb25189e-4134-42e0-a1de-2f85e7fc0f4f)
 
 ## Features
 
@@ -17,20 +15,6 @@ A truly **Simple Asynchronous** web chat that sends and receives messages in the
 - 📌: The Server Knows when Client is disconnected.
 - 📌: The server suppots Poll, Epoll, WSAPoll, Kqueue.
 - 📌: It is Compatible with Windows, Linux, Mac & FreeBSD.
-
-## Dependencies
-```bash
-#Openssl
-    🪟: pacman -S mingw-w64-ucrt-x86_64-openssl
-    🐧: sudo apt install libssl-dev
-#Zlib
-    🪟: pacman -S mingw-w64-ucrt-x86_64-zlib
-    🐧: sudo apt install zlib1g-dev
-#Express:
-    🔗: https://github.com/NodeppOficial/nodepp-express
-#Nodepp:
-    🔗https://github.com/NodeppOficial/nodepp
-```
 
 ## How does it works
 
@@ -176,10 +160,6 @@ Second, we have to make a simple API to handle incoming and outcoming messages:
         auto n = clients.first(); while( n != nullptr ) { n->data.write( data ); n=n->next; }
     }
 ```
-
-## The Final Result
-
-![image3](https://github.com/EDBCREPO/HTTPSocket/blob/main/images/image3.png?raw=true)
 
 ## Build & Usage
 
