@@ -7,6 +7,19 @@ A truly **Simple Asynchronous** web chat that sends and receives messages in the
 ## Preview
 [Preview](https://github.com/user-attachments/assets/cb25189e-4134-42e0-a1de-2f85e7fc0f4f)
 
+## Build & Usage
+```bash
+# Clone the Project
+💻: git clone https://github.com/ConvoOfficial/Convo-Prototype-Socket
+
+# Clone the Submodules
+💻: git submodule update --init --recursive
+
+# Compile the Code
+🐧: time g++ -o main main.cpp -I ./Modules -lssl -lcrypto -lz ; ./main
+🪟: time g++ -o main main.cpp -I ./Modules -lssl -lcrypto -lz -lws2_32 ; ./main
+```
+
 ## Features
 
 - 📌: It is memory safety thanks to NodePP 
