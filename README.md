@@ -109,12 +109,10 @@ Second, we have to make a simple API to handle incoming and outcoming messages:
 
         // Initial HTML Mesage Box Payload
         string_t message = R"(<!DOCTYPE html>
-            <html lang="en">
-            <head>
+            <html lang="en"> <head>
                 <meta charset="UTF-8"> <title>basepage</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            </head> <body>
-            <div style="display:flex; flex-direction:column-reverse; gap:20px;">
+            </head> <body> <div style="display:flex; flex-direction:column-reverse; gap:20px;">
         )"; 
 
         // Store this client into the client's list
